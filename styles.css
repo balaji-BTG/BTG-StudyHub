@@ -55,8 +55,8 @@ header nav ul li a:hover {
   font-weight: bold;
   text-align: center;
   padding: 5px;
-  background-color: #fff; /* Contrasting white background */
-  color: #000; /* Black text */
+  background-color: #fff; /* Contrasting black background */
+  color: #000; /* White text */
 }
 
 main {
