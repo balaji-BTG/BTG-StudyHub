@@ -1,174 +1,77 @@
-/* General Styles */
-body {
-  font-family: Arial, sans-serif;
+/* General Reset */
+* {
   margin: 0;
   padding: 0;
-  background-color: #000; /* Black background */
-  color: #fff; /* White text */
+  box-sizing: border-box;
 }
 
-header {
-  background-color: #111; /* Darker black for contrast */
-  color: white;
-  padding: 10px 0;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
-}
-
-header .top-bar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+/* Body and Layout */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
   padding: 0 20px;
 }
 
-header h1 {
-  margin: 0;
-}
-
-header nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-}
-
-header nav ul li {
-  margin: 0 15px;
-}
-
-header nav ul li a {
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-  transition: color 0.3s;
-}
-
-header nav ul li a:hover {
-  color: #ccc;
-}
-
-.countdown {
-  font-size: 20px;
-  font-weight: bold;
-  text-align: center;
-  padding: 5px;
-  background-color: #fff; /* Contrasting black background */
-  color: #000; /* White text */
-}
-
-main {
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
   padding: 20px;
 }
 
-section {
-  margin-bottom: 20px;
-}
-
-#search-section {
-  margin-bottom: 20px;
-}
-
-#search-bar {
-  width: 100%;
-  padding: 10px;
-  font-size: 16px;
-  border: 1px solid #fff;
-  border-radius: 5px;
-  background-color: #222; /* Dark input field */
+/* Header */
+header {
+  background-color: #333;
   color: #fff;
+  padding: 10px 0;
+  text-align: center;
 }
 
-form label {
-  font-weight: bold;
+header h1 {
+  font-size: 2rem;
 }
 
-form input, form select, form button {
-  display: block;
-  margin: 10px 0;
+/* Navigation */
+nav {
+  background-color: #444;
   padding: 10px;
-  width: 100%;
-  font-size: 16px;
+  margin-top: 20px;
+  text-align: center;
 }
 
-form button {
-  background-color: #444; /* Gray button */
-  color: white;
-  border: none;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-form button:hover {
-  background-color: #666; /* Lighter gray on hover */
-}
-
-#uploaded-papers {
-  list-style: none;
-  padding: 0;
-}
-
-#uploaded-papers li {
-  background: #222; /* Darker card */
-  margin-bottom: 10px;
-  padding: 15px;
-  border-radius: 5px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-#uploaded-papers li a {
+nav a {
+  color: #fff;
   text-decoration: none;
-  color: #00f; /* Blue links */
-  font-weight: bold;
-  transition: color 0.3s;
+  padding: 10px 20px;
+  margin: 0 10px;
 }
 
-#uploaded-papers li a:hover {
-  color: #88f;
+nav a:hover {
+  background-color: #555;
+  border-radius: 5px;
 }
 
+/* Footer */
 footer {
-  background-color: #111;
-  color: white;
+  background-color: #333;
+  color: #fff;
   text-align: center;
   padding: 10px 0;
+  margin-top: 20px;
 }
-/* Input Fields */
-form input, form select {
-  color: #fff; /* White text */
-  background-color: #222; /* Dark background */
-  border: 1px solid #fff; /* Visible border */
-  padding: 10px;
+
+/* Buttons */
+button {
+  background-color: #5c6bc0;
+  color: white;
+  padding: 10px 20px;
+  border: none;
   border-radius: 5px;
-}
-
-/* Dropdown */
-form select option {
-  background-color: #000; /* Black background */
-  color: #fff; /* White text */
-}
-
-/* Uploaded Files List */
-#uploaded-papers li {
-  background: #333; /* Slightly lighter than background */
-  margin-bottom: 10px;
-  padding: 15px;
-  border-radius: 5px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-#uploaded-papers li a {
-  color: #00f; /* Blue link */
-  text-decoration: underline;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-#uploaded-papers li a:hover {
-  color: #88f; /* Lighter blue on hover */
+button:hover {
+  background-color: #3f51b5;
 }
