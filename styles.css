@@ -137,3 +137,38 @@ footer {
   text-align: center;
   padding: 10px 0;
 }
+/* Input Fields */
+form input, form select {
+  color: #fff; /* White text */
+  background-color: #222; /* Dark background */
+  border: 1px solid #fff; /* Visible border */
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Dropdown */
+form select option {
+  background-color: #000; /* Black background */
+  color: #fff; /* White text */
+}
+
+/* Uploaded Files List */
+#uploaded-papers li {
+  background: #333; /* Slightly lighter than background */
+  margin-bottom: 10px;
+  padding: 15px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#uploaded-papers li a {
+  color: #00f; /* Blue link */
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#uploaded-papers li a:hover {
+  color: #88f; /* Lighter blue on hover */
+}
