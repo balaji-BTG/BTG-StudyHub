@@ -21,10 +21,9 @@ function updateCountdown() {
 
 setInterval(updateCountdown, 1000);
 
-// Handle Uploads Using Local Storage
+// Local Storage for Papers
 const uploadForm = document.getElementById('upload-form');
 const uploadedPapersList = document.getElementById('uploaded-papers');
-const searchBar = document.getElementById('search-bar');
 const papers = JSON.parse(localStorage.getItem('papers')) || [];
 
 function displayPapers() {
@@ -39,4 +38,24 @@ function displayPapers() {
 }
 
 uploadForm.addEventListener('submit', (e) => {
-  e.prevent
+  e.preventDefault();
+
+  const title = document.getElementById('title').value;
+  const subject = document.getElementById('subject').value;
+  const file = document.getElementById('file').files[0];
+
+  if (!title || !subject || !file) {
+    alert('Please fill all fields!');
+    return;
+  }
+
+  const fileURL = URL.createObjectURL(file);
+
+  papers.push({ title, subject, file: fileURL });
+  localStorage.setItem('papers', JSON.stringify(papers));
+  displayPapers();
+
+  uploadForm.reset();
+});
+
+displayPapers();
