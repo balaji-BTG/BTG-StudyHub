@@ -1,0 +1,139 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #000; /* Black background */
+  color: #fff; /* White text */
+}
+
+header {
+  background-color: #111; /* Darker black for contrast */
+  color: white;
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+}
+
+header .top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+header h1 {
+  margin: 0;
+}
+
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+header nav ul li {
+  margin: 0 15px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+  color: #ccc;
+}
+
+.countdown {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  padding: 5px;
+  background-color: #fff; /* Contrasting white background */
+  color: #000; /* Black text */
+}
+
+main {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+#search-section {
+  margin-bottom: 20px;
+}
+
+#search-bar {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  background-color: #222; /* Dark input field */
+  color: #fff;
+}
+
+form label {
+  font-weight: bold;
+}
+
+form input, form select, form button {
+  display: block;
+  margin: 10px 0;
+  padding: 10px;
+  width: 100%;
+  font-size: 16px;
+}
+
+form button {
+  background-color: #444; /* Gray button */
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: #666; /* Lighter gray on hover */
+}
+
+#uploaded-papers {
+  list-style: none;
+  padding: 0;
+}
+
+#uploaded-papers li {
+  background: #222; /* Darker card */
+  margin-bottom: 10px;
+  padding: 15px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#uploaded-papers li a {
+  text-decoration: none;
+  color: #00f; /* Blue links */
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+#uploaded-papers li a:hover {
+  color: #88f;
+}
+
+footer {
+  background-color: #111;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
